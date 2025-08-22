@@ -26,7 +26,7 @@ export async function POST(req: Request) {
             from: process.env.EMAIL_USER,
             to: process.env.EMAIL_TO,
             subject,
-            text,
+            html: text,
         };
 
         await transporter.sendMail(mailOptions);
