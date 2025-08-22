@@ -1,6 +1,22 @@
 .Footer {
     background-color: black;
 
+    &Form {
+        background-color: #110F0F;
+        padding: 80px 10px;
+
+        &Container {
+            padding: 80px 25px;
+            background-color: var(--brandcolor);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 32px;
+            color: #110F0F;
+        }
+    }
+
     &Container {
         display: flex;
         justify-content: center;
@@ -12,7 +28,7 @@
 
     &Content {
         display: flex;
-
+        padding: 40px 0;
         justify-content: space-between;
         width: 100%;
 

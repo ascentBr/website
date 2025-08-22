@@ -20,8 +20,8 @@ const ralewaySans = Raleway({
 });
 
 export const metadata: Metadata = {
-  title: "Ascent",
-  description: "dev & performance",
+  title: "Ascent - Web & Performance",
+  description: "Transforme seu negócio com estratégias digitais de alta performance.",
 };
 
 export default function RootLayout({

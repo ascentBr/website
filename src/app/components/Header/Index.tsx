@@ -8,9 +8,11 @@ const Header = () => {
   return (
     <div className={styles.header}>
       <div className={`${styles.container} container`}>
-        <Link href="/">
-          <Image src="/brand/Namelogo.svg" alt="Logo" width={183} height={42} />
-        </Link>
+        <h1 className={styles.logo}>
+          <Link href="/">
+            <Image src="/brand/Namelogo.svg" alt="Ascent - web & performance" width={183} height={42} />
+          </Link>
+        </h1>
 
         <nav className={styles.nav}>
           <ul>
@@ -21,10 +23,10 @@ const Header = () => {
               <Link href="/about">Sobre</Link>
             </li>
             <li>
-              <Link href="/services">Serviços</Link>
+              <Link href="#benefits">Serviços</Link>
             </li>
             <li className={styles.cta}>
-              <Link href="/contact">Contato</Link>
+              <Link href="#contact">Contato</Link>
             </li>
           </ul>
         </nav>

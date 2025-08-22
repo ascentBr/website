@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './WhyChooseUs.module.scss'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const WhyChooseUs = () => {
   return (
@@ -13,7 +14,7 @@ const WhyChooseUs = () => {
                     Na Ascent, unimos criatividade e tecnologia para oferecer soluções digitais que elevam sua marca a novos patamares.
                     Nossa equipe é apaixonada por inovação e comprometida com resultados reais.
                 </p>
-                <a href="">Lets connect</a>
+                <Link href="#contact">Vamos conversar</Link>
             </div>
         </div>
     </div>

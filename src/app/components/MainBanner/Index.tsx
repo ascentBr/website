@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './MainBanner.module.css'
 import ContactForm from '../ContactForm/Index'
 
+
 const MainBanner = () => {
   return (
          <div style={{ backgroundImage: `url("/main_banner.png")` }} className={styles.banner}>

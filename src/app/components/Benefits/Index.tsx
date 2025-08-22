@@ -14,7 +14,7 @@ const BenefitItem = ({ icon, title, description }) => {
 
 const Benefits = () => {
     return (
-        <div className={styles.benefitsContainer}>
+        <div className={styles.benefitsContainer} id='benefits'>
             <div className="container">
                 <div className={styles.benefitsHeader}>
                     <h2 className={styles.benefitsHeaderTitle}>O que oferecemos</h2>
