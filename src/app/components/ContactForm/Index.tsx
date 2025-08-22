@@ -1,6 +1,7 @@
 'use client';
 import React, { useState } from 'react'
 import style from './ContactForm.module.scss'
+import { getEmailTemplate } from '@/app/utils/GetEmailTemplate';
 type ContactFormProps = {
     buttonText?: string;
     buttonStyle?: "primary" | "secondary";
@@ -41,13 +42,11 @@ const ContactForm = ({ buttonText = "Atrair Novos Clientes", buttonStyle = "prim
             body: JSON.stringify({
                 to: formData.email,
                 subject: `🥳 NOVO CONTATO VIA SITE`,
-                text: `
-                -----------------------
-
-                | Email: ${formData.email} 
-                -----------------------
-  
-                `
+                text: getEmailTemplate({
+                    email: formData.email,
+                    subject: `🥳 NOVO CONTATO VIA SITE`,
+                    message: ""
+                })
                 // recaptchaToken, // Send the token to the server for verification
             }),
         })
