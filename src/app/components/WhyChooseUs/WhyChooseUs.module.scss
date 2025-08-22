@@ -1,0 +1,52 @@
+.whyChooseUs {
+    padding: 80px 0;
+
+    &Container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        @media screen and (max-width: 768px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &Title {
+        font-size: 1.75rem;
+        font-weight: 700;
+        color: #FFFFFF;
+    }
+
+    &SubTitle {
+        font-size: 1rem;
+        font-weight: 400;
+        color: #B0B0B0;
+    }
+
+    &Content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+        justify-content: center;
+        gap: 32px;
+
+
+
+        a,
+        button {
+            padding: 10px 20px;
+            background: transparent;
+            color: var(--brandcolor);
+            border: 1px solid var(--brandcolor);
+            border-radius: 25px;
+            font-weight: 600;
+            transition: all 0.2s ease-in-out;
+
+            &:hover {
+                background: var(--brandcolor);
+                color: var(--background);
+            }
+
+        }
+    }
+}

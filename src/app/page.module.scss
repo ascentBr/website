@@ -1,0 +1,7 @@
+.page{
+    background-color: #110F0F;
+
+    > div:nth-child(even) {
+        background-color: #000;
+    }
+}
