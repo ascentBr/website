@@ -14,7 +14,7 @@ const WhyChooseUs = () => {
                     Na Ascent, unimos criatividade e tecnologia para oferecer soluções digitais que elevam sua marca a novos patamares.
                     Nossa equipe é apaixonada por inovação e comprometida com resultados reais.
                 </p>
-                <Link href="./#contact">Vamos conversar</Link>
+                <Link href="#contact">Vamos conversar</Link>
             </div>
         </div>
     </div>

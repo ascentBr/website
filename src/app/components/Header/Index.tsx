@@ -20,13 +20,13 @@ const Header = () => {
               <Link href="/">Inicio</Link>
             </li>
             <li>
-              <Link href="/about">Sobre</Link>
+              <Link href="/sobre">Sobre</Link>
             </li>
             <li>
               <Link href="./#benefits">Serviços</Link>
             </li>
             <li className={styles.cta}>
-              <Link href="./#contact">Contato</Link>
+              <Link href="#contact">Contato</Link>
             </li>
           </ul>
         </nav>
