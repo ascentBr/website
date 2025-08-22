@@ -44,10 +44,10 @@ const Footer = () => {
       <div className={styles.Footer}>
         <div className={`container ${styles.FooterContainer}`}>
           <div className={styles.FooterContent}>
-            <FooterMenu settings={{ title: "Links rápidos", links: [{ label: "Sobre Nós", url: "/sobre" }, { label: "Contato", url: "#contact" }] }} />
-            {/* <FooterMenu settings={{ title: "Support", links: [{ label: "Contact", url: "#contact" }, { label: "FAQ", url: "/faq" }] }} />
-          <FooterMenu settings={{ title: "Support", links: [{ label: "Contact", url: "#contact" }, { label: "FAQ", url: "/faq" }] }} /> */}
-            {/* <FooterMenu settings={{ title: "Support", links: [{ label: "Contact", url: "#contact" }, { label: "FAQ", url: "/faq" }] }} /> */}
+            <FooterMenu settings={{ title: "Links rápidos", links: [{ label: "Sobre Nós", url: "/sobre" }, { label: "Contato", url: "./#contact" }] }} />
+            {/* <FooterMenu settings={{ title: "Support", links: [{ label: "Contact", url: "/#contact" }, { label: "FAQ", url: "/faq" }] }} />
+          <FooterMenu settings={{ title: "Support", links: [{ label: "Contact", url: "/#contact" }, { label: "FAQ", url: "/faq" }] }} /> */}
+            {/* <FooterMenu settings={{ title: "Support", links: [{ label: "Contact", url: "/#contact" }, { label: "FAQ", url: "/faq" }] }} /> */}
             <div className={styles.FooterMenu}>
               <Link href="/" className={styles.FooterLogo}>
                 <Image src="/brand/Full_Logo.svg" alt="Ascent Logo" width={124} height={80} />

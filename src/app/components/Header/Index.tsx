@@ -23,10 +23,10 @@ const Header = () => {
               <Link href="/about">Sobre</Link>
             </li>
             <li>
-              <Link href="#benefits">Serviços</Link>
+              <Link href="./#benefits">Serviços</Link>
             </li>
             <li className={styles.cta}>
-              <Link href="#contact">Contato</Link>
+              <Link href="./#contact">Contato</Link>
             </li>
           </ul>
         </nav>
