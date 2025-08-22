@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import style from './ContactForm.module.scss'
 import { getEmailTemplate } from '@/app/utils/GetEmailTemplate';
+import { toast } from 'react-toastify';
 type ContactFormProps = {
     buttonText?: string;
     buttonStyle?: "primary" | "secondary";
@@ -11,6 +12,7 @@ type ContactFormProps = {
 
 const ContactForm = ({ buttonText = "Atrair Novos Clientes", buttonStyle = "primary" }: ContactFormProps) => {
 
+    const [disableButton, setDisableButton] = useState(false);
     const [formData, setFormData] = useState({
         // name: '',
         email: '',
@@ -24,8 +26,8 @@ const ContactForm = ({ buttonText = "Atrair Novos Clientes", buttonStyle = "prim
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
-        // setDisableButton(true)
-        // toast(t('submit.waiting_message'));
+        setDisableButton(true);
+        toast("Enviando email...");
 
         // if (!recaptchaToken) {
         //     alert('Please complete the reCAPTCHA');
@@ -45,26 +47,26 @@ const ContactForm = ({ buttonText = "Atrair Novos Clientes", buttonStyle = "prim
                 text: getEmailTemplate({
                     email: formData.email,
                     subject: `🥳 NOVO CONTATO VIA SITE`,
-                    message: ""
+                    message: "Um novo contato foi feito via site, verifique o email para mais detalhes.",
                 })
                 // recaptchaToken, // Send the token to the server for verification
             }),
         })
             .then((response) => {
                 if (response.ok) {
-                    // toast.success(t('submit.success_message'));
+                    toast.success("Email enviado com sucesso!");
                     setFormData({ email: '' });
                     console.log('Email sent successfully');
                 } else {
-                    // toast.error(t('submit.error_message'))
+                    toast.error("Falha ao enviar email.");
                     console.error('Failed to send email');
                 }
             })
             .catch((error) => {
-                // toast.error(t('submit.error_message'))
+                toast.error("Falha ao enviar email.");
                 console.error('Error sending email:', error);
             }).finally(() => {
-                // setDisableButton(false);
+                setDisableButton(false);
 
             });
     };
@@ -83,6 +85,7 @@ const ContactForm = ({ buttonText = "Atrair Novos Clientes", buttonStyle = "prim
                 />
                 <button
                     type="submit"
+                    disabled={disableButton}
                     className={buttonStyle === "primary" ? style.primaryButton : style.secondaryButton}
                 >
                     {buttonText}

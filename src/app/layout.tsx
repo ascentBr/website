@@ -3,6 +3,7 @@ import { Geist, Geist_Mono, Raleway } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header/Index";
 import Footer from "./components/Footer/Index";
+import { ToastContainer } from "react-toastify";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,11 +31,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="pt_br">
       <body className={`${ralewaySans.variable}`}>
-        <Header/>
+        <ToastContainer />
+        <Header />
         {children}
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );
