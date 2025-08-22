@@ -1,8 +1,8 @@
 .Footer {
-    background-color: black;
+    background-color: var(--backgroundAlternative);
 
     &Form {
-        background-color: #110F0F;
+        background-color: var(--background);
         padding: 80px 10px;
 
         &Container {
@@ -66,7 +66,7 @@
                     }
 
                     &:hover {
-                        color: #FFA800; // Brand color
+                        color: var(--brandcolor); // Brand color
                     }
                 }
             }

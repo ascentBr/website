@@ -40,6 +40,14 @@
     gap: 12px;
     padding: 24px;
     text-align: left;
+    transition: all 0.2s ease-in-out;
+
+    &:hover{
+        border-color: var(--brandcolor);
+        box-shadow: 0 4px 8px rgba(255, 168, 0, 0.2);
+        transform: translateY(-5px);
+        background-color: var(--backgroundAlternative);
+    }
 
     &Title {
         font-size: 1.75rem;

@@ -31,11 +31,18 @@
     cursor: pointer;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     font-family: inherit;
+
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.05);
+    }
   }
 
   .primaryButton {
     background: var(--brandcolor);
     color: #181818;
+
   }
 
   .secondaryButton {
