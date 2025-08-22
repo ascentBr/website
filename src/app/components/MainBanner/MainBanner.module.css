@@ -1,0 +1,55 @@
+.banner {
+  background-size: cover;
+  background-position: center;
+  height: 867px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--foreground);
+}
+
+@media screen and (max-width: 768px) {
+  .banner {
+    height: auto;
+    padding: 80px 0 70px 0;
+  }
+}
+
+.bannerContent {
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  max-width: 753px;
+  gap: 2rem;
+  padding: 0 10px;
+  width: 100%;
+}
+
+.bannerText {
+  font-weight: 800;
+  font-size: 6rem;
+  text-align: left;
+  line-height: 5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .bannerText {
+    font-size: clamp(42px, 15vw, 6rem);
+    line-height: 1;
+  }
+}
+
+.bannerText span {
+  background: var(--brandGradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.bannerSubtext {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #fff;
+  opacity: 0.4;
+}

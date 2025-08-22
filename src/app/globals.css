@@ -1,6 +1,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --brandcolor: #FFA800;
+  --brandGradient: linear-gradient(90deg, #9DE8EE 0%,#F47C0B 49%, #9f8ced 100%);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,7 +21,7 @@ body {
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-raleway-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -33,6 +35,12 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.container {
+  max-width: 1290px;
+  margin: 0 auto;
+  padding: 10px 25px;
 }
 
 @media (prefers-color-scheme: dark) {
