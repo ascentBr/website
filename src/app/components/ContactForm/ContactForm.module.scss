@@ -1,9 +1,20 @@
+.form {
+  width: 50%;
+
+  @media screen and (max-width: 1023px) {
+    width: 100%;
+  }
+}
+
 .formContainer {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 12px;
+  flex-direction: column;
+  width: 100%;
 
-  input {
+  input,
+  textarea {
     background: #181818;
     color: #fff;
     border: 2px solid #bfc9db;
@@ -11,8 +22,15 @@
     padding: 16px 24px;
     font-size: 18px;
     outline: none;
-    width: 340px;
+    width: 100%;
     box-sizing: border-box;
+    font-family: var(--font-raleway-sans);
+    font-size: 1em;
+  }
+
+  textarea {
+    height: 10em;
+    border-radius: 26px;
   }
 
   .secondaryInput {

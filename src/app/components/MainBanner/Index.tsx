@@ -1,6 +1,5 @@
 import React from 'react'
 import styles from './MainBanner.module.scss'
-import ContactForm from '../ContactForm/Index'
 import Image from 'next/image'
 
 
@@ -27,7 +26,7 @@ const MainBanner = () => {
             <p className={styles.bannerSubtext}>
           Transforme visitas em oportunidades reais. Cresça seu negócio com estratégias que geram resultados.
             </p>
-            <ContactForm />
+            <a className={styles.callToAction} href="#contact-form">Atraia novos clientes</a>
           </div>
         </div>
   )

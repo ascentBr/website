@@ -14,9 +14,9 @@ const ContactForm = ({ buttonText = "Atrair Novos Clientes", buttonStyle = "prim
 
     const [disableButton, setDisableButton] = useState(false);
     const [formData, setFormData] = useState({
-        // name: '',
+        name: '',
         email: '',
-        // message: '',
+        message: '',
     });
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -45,9 +45,10 @@ const ContactForm = ({ buttonText = "Atrair Novos Clientes", buttonStyle = "prim
                 to: formData.email,
                 subject: `🥳 NOVO CONTATO VIA SITE`,
                 text: getEmailTemplate({
+                    name: formData.name,
                     email: formData.email,
                     subject: `🥳 NOVO CONTATO VIA SITE`,
-                    message: "Um novo contato foi feito via site, verifique o email para mais detalhes.",
+                    message: formData.message,
                 })
                 // recaptchaToken, // Send the token to the server for verification
             }),
@@ -55,7 +56,7 @@ const ContactForm = ({ buttonText = "Atrair Novos Clientes", buttonStyle = "prim
             .then((response) => {
                 if (response.ok) {
                     toast.success("Email enviado com sucesso!");
-                    setFormData({ email: '' });
+                    setFormData({ email: '', name: '', message: '' });
                     console.log('Email sent successfully');
                 } else {
                     toast.error("Falha ao enviar email.");
@@ -72,14 +73,37 @@ const ContactForm = ({ buttonText = "Atrair Novos Clientes", buttonStyle = "prim
     };
 
     return (
-        <form  onSubmit={handleSubmit}>
+        <form id="contact-form" className={style.form} onSubmit={handleSubmit}>
             <div className={`${style.formContainer}`}>
+              
                 <input
-                   type="email"
+                    type="text"
+                    required
+                    id="name"
+                    name="name"
+                    placeholder="Como podemos chamar você?"
+                    value={formData.name}
+                    onChange={handleChange}
+                    className={buttonStyle === "primary" ? style.primaryInput : style.secondaryInput}
+                />
+                
+                <input
+                    type="email"
                     id="email"
+                    required
                     name="email"
-                    placeholder="Email"
+                    placeholder="Qual o seu email?"
                     value={formData.email}
+                    onChange={handleChange}
+                    className={buttonStyle === "primary" ? style.primaryInput : style.secondaryInput}
+                />
+               
+                <textarea
+                    id="message"
+                    name="message"
+                    required
+                    placeholder="Descreva seu projeto/necessidades aqui..."
+                    value={formData.message}
                     onChange={handleChange}
                     className={buttonStyle === "primary" ? style.primaryInput : style.secondaryInput}
                 />
