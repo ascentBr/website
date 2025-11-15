@@ -13,6 +13,8 @@
     #f47c0b 49%,
     #9f8ced 100%
   );
+
+  --rounded : 12px;
 }
 
 @media (prefers-color-scheme: dark) {

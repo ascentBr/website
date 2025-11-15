@@ -46,6 +46,7 @@
     padding: 24px;
     text-align: left;
     transition: all 0.2s ease-in-out;
+    border-radius: var(--rounded);
 
     &:hover {
         border-color: var(--brandcolor);
