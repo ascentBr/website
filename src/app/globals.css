@@ -10,7 +10,7 @@
   --brandGradient: linear-gradient(
     90deg,
     #9de8ee 0%,
-    #f47c0b 49%,
+    var(--brandcolor) 49%,
     #9f8ced 100%
   );
 

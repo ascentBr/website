@@ -67,10 +67,9 @@
   color: var(--background);
 }
 
-// .logo {
-//   transition: all 0.2s ease-in-out;
-
-//   &:hover {
-//     transform: scale(1.05);
-//   }
-// }
+.logo {
+  svg{
+    width: 183px;
+    height: 42px;
+  }
+}

@@ -5,13 +5,15 @@ import Image from 'next/image'
 import ThemeChanger from '../ThemeChanger/Index';
 import DynamicLogo from '../DynamicLogo/Index';
 
+import Logo from "@/assets/logo.svg";
+
 const Header = () => {
   return (
     <div className={styles.header}>
       <div className={`${styles.container} container`}>
         <h1 className={styles.logo}>
           <Link href="/">
-            <DynamicLogo lightModeSrc="/brand/Name_Blacklogo.svg" darkModeSrc="/brand/NameLogo.svg" />
+           <Logo />
           </Link>
         </h1>
 
