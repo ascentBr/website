@@ -1,11 +1,15 @@
 .header {
-  background-color: rgba(15, 15, 15, 0.4);
+  background-color: rgb(255 255 255 / 8%);
   backdrop-filter: blur(18px);
   position: fixed;
   top: 0;
   z-index: 1000;
   left: 0;
   width: 100%;
+
+  @media(prefers-color-scheme: dark){
+      background-color: rgba(15, 15, 15, 0.4);
+  }
 }
 
 .container {

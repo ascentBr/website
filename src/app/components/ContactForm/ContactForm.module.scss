@@ -16,7 +16,7 @@
   input,
   textarea {
     background: #181818;
-    color: #fff;
+    color: var(--foreground);
     border: 2px solid #bfc9db;
     border-radius: 32px;
     padding: 16px 24px;

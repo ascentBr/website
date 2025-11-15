@@ -10,7 +10,11 @@ const Header = () => {
       <div className={`${styles.container} container`}>
         <h1 className={styles.logo}>
           <Link href="/">
-            <Image src="/brand/Namelogo.svg" alt="Ascent - web & performance" width={183} height={42} />
+            <picture>
+              <source srcSet="/brand/Namelogo.svg" media="(prefers-color-scheme: dark)" />
+              <Image src="/brand/Name_Blacklogo.svg" alt="Ascent - web & performance" width={183} height={42} />
+            </picture>
+
           </Link>
         </h1>
 
