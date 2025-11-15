@@ -33,7 +33,7 @@ const BenefitItem = ({ icon, title, description }: BenefitItemProps) => {
 
     return (
         <div className={styles.benefitItem}>
-            <i><Icon width={48} height={48} /></i>
+            <i className={styles.benefitItemIcon}><Icon /></i>
             <h3 className={styles.benefitItemTitle}>{title}</h3>
             <p className={styles.benefitItemSubtitle}>{description}</p>
         </div>
