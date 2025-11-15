@@ -52,10 +52,6 @@
   line-height: 1.5;
   color: var(--foreground);
   opacity: 1;
-
-  @media (prefers-color-scheme: dark) {
-    opacity: 0.4;
-  }
 }
 
 .callToAction {

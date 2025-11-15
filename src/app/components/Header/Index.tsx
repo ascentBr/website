@@ -2,7 +2,8 @@ import React from 'react'
 import styles from './Header.module.scss'
 import Link from 'next/link'
 import Image from 'next/image'
-
+import ThemeChanger from '../ThemeChanger/Index';
+import DynamicLogo from '../DynamicLogo/Index';
 
 const Header = () => {
   return (
@@ -10,11 +11,7 @@ const Header = () => {
       <div className={`${styles.container} container`}>
         <h1 className={styles.logo}>
           <Link href="/">
-            <picture>
-              <source srcSet="/brand/Namelogo.svg" media="(prefers-color-scheme: dark)" />
-              <Image src="/brand/Name_Blacklogo.svg" alt="Ascent - web & performance" width={183} height={42} />
-            </picture>
-
+            <DynamicLogo lightModeSrc="/brand/Name_Blacklogo.svg" darkModeSrc="/brand/NameLogo.svg" />
           </Link>
         </h1>
 
@@ -27,7 +24,7 @@ const Header = () => {
               <Link href="/sobre">Sobre</Link>
             </li>
             <li>
-              <Link href="./#benefits">Serviços</Link>
+              <ThemeChanger />
             </li>
             <li className={styles.cta}>
               <Link href="#contact">Contato</Link>

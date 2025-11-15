@@ -1,10 +1,9 @@
 import React from 'react'
 import styles from './Footer.module.scss'
-import Image from 'next/image'
 import Link from 'next/link'
 import ContactForm from '../ContactForm/Index'
-const LOGO_SRC = '/brand/Full_Logo.svg';
-const LOGO_SRC_DARK = '/brand/Full_Logo_Blacklogo.svg';
+import DynamicLogo from '../DynamicLogo/Index'
+
 type FooterMenuProps = {
   settings: {
     title: string;
@@ -50,10 +49,7 @@ const Footer = () => {
             {/* <FooterMenu settings={{ title: "Support", links: [{ label: "Contact", url: "/#contact" }, { label: "FAQ", url: "/faq" }] }} /> */}
             <div className={styles.FooterMenu}>
               <Link href="/" className={styles.FooterLogo}>
-                <picture>
-                  <source srcSet={LOGO_SRC} media="(prefers-color-scheme: dark)" />
-                  <img src={LOGO_SRC_DARK} alt="Ascent logo" width={124} height={80} className={styles.FooterLogoImage} />
-                </picture>
+              <DynamicLogo lightModeSrc="/brand/Full_Logo_Blacklogo.svg" darkModeSrc="/brand/Full_Logo.svg" />
               </Link>
             </div>
           </div>

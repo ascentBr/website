@@ -16,11 +16,6 @@
         font-weight: 400;
         color: var(--foreground);
         margin-bottom: 40px;
-
-        @media (prefers-color-scheme: dark) {
-            opacity: 0.7;
-        }
-
     }
 }
 
@@ -65,10 +60,6 @@
         font-size: 1rem;
         font-weight: 400;
         color: var(--foreground);
-
-        @media (prefers-color-scheme: dark) {
-            opacity: 0.7;
-        }
     }
 
 }
