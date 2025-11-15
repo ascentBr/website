@@ -1,11 +1,11 @@
 :root {
-  /* --background: #ffffff;
-  --foreground: #171717;
-  --backgroundAlternative: #f5f5f5; */
+  --background: #f3f3f3;
+  --foreground: #312f2c;
+  --backgroundAlternative: #f5f5f5;
 
-  --background: #0a0a0a;
+  /* --background: #0a0a0a;
   --foreground: #ededed;
-  --backgroundAlternative: #000;
+  --backgroundAlternative: #000; */
   --brandcolor: #ffa800;
   --brandGradient: linear-gradient(
     90deg,
@@ -13,6 +13,17 @@
     #f47c0b 49%,
     #9f8ced 100%
   );
+
+  --rounded : 12px;
+}
+
+[data-theme='dark'] {
+  
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    --backgroundAlternative: #000;
+  
+
 }
 
 @media (prefers-color-scheme: dark) {

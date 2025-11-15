@@ -1,9 +1,8 @@
 import React from 'react'
 import styles from './Footer.module.scss'
-import Image from 'next/image'
 import Link from 'next/link'
 import ContactForm from '../ContactForm/Index'
-
+import DynamicLogo from '../DynamicLogo/Index'
 
 type FooterMenuProps = {
   settings: {
@@ -50,7 +49,7 @@ const Footer = () => {
             {/* <FooterMenu settings={{ title: "Support", links: [{ label: "Contact", url: "/#contact" }, { label: "FAQ", url: "/faq" }] }} /> */}
             <div className={styles.FooterMenu}>
               <Link href="/" className={styles.FooterLogo}>
-                <Image src="/brand/Full_Logo.svg" alt="Ascent Logo" width={124} height={80} />
+              <DynamicLogo lightModeSrc="/brand/Full_Logo_Blacklogo.svg" darkModeSrc="/brand/Full_Logo.svg" />
               </Link>
             </div>
           </div>

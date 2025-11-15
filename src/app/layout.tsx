@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "./components/Header/Index";
 import Footer from "./components/Footer/Index";
 import { ToastContainer } from "react-toastify";
+import { ThemeProvider } from "next-themes";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,13 +32,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt_br">
+    <html lang="pt_br" suppressHydrationWarning={true}>
+
       <body className={`${ralewaySans.variable}`}>
         <ToastContainer />
-        <Header />
-        {children}
-        <Footer />
+        <ThemeProvider defaultTheme="dark">
+          <Header />
+          {children}
+          <Footer />
+        </ThemeProvider>
       </body>
+
     </html>
   );
 }

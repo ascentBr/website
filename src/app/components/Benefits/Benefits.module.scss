@@ -7,14 +7,14 @@
     &Title {
         font-size: 2.5rem;
         font-weight: 700;
-        color: #FFFFFF;
+        color: var(--foreground);
         margin-bottom: 24px;
     }
 
     &Subtitle {
         font-size: 1rem;
         font-weight: 400;
-        color: #B0B0B0;
+        color: var(--foreground);
         margin-bottom: 40px;
     }
 }
@@ -41,8 +41,9 @@
     padding: 24px;
     text-align: left;
     transition: all 0.2s ease-in-out;
+    border-radius: var(--rounded);
 
-    &:hover{
+    &:hover {
         border-color: var(--brandcolor);
         box-shadow: 0 4px 8px rgba(255, 168, 0, 0.2);
         transform: translateY(-5px);
@@ -52,13 +53,20 @@
     &Title {
         font-size: 1.75rem;
         font-weight: 700;
-        color: #FFFFFF;
+        color: var(--foreground);
+    }
+
+    &Icon{
+        svg{
+            width: 48px;
+            height: 48px;
+        }
     }
 
     &Subtitle {
         font-size: 1rem;
         font-weight: 400;
-        color: #B0B0B0;
+        color: var(--foreground);
     }
 
 }

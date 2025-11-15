@@ -50,8 +50,8 @@
 .bannerSubtext {
   font-size: 1rem;
   line-height: 1.5;
-  color: #fff;
-  opacity: 0.4;
+  color: var(--foreground);
+  opacity: 1;
 }
 
 .callToAction {
@@ -66,6 +66,7 @@
   width: fit-content;
   transition: all 0.2s ease-in-out;
   text-align: center;
+
   &:hover {
     transform: scale(1.05);
   }
