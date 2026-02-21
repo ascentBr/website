@@ -25,9 +25,9 @@ const Header = () => {
             <li>
               <Link href="/sobre">Sobre</Link>
             </li>
-            <li>
+            {/* <li>
               <ThemeChanger />
-            </li>
+            </li> */}
             <li className={styles.cta}>
               <Link href="#contact">Contato</Link>
             </li>
