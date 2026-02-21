@@ -1,10 +1,10 @@
 import PixelCraft from "./pixelcraft";
-// import Aurora from "./aurora";
+import Aurora from "./aurora";
 // import Forge from "./forge";
 
 export const projectRegistry = {
   pixelcraft: PixelCraft,
-//   aurora: Aurora,
+  aurora: Aurora,
   // forge: Forge,
 } as const;
 
