@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import { Raleway } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const ralewaySans = Raleway({
@@ -19,7 +20,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR" suppressHydrationWarning>
-      <body className={ralewaySans.variable}>{children}</body>
+      <body className={ralewaySans.variable}>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
