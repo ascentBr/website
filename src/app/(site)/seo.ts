@@ -47,6 +47,11 @@ const services = [
       "Estrutura, títulos e textos preparados para que pessoas da sua região encontrem o negócio quando pesquisarem pelo que ele faz.",
   },
   {
+    name: "Sistemas sob medida para bares, restaurantes e empresas",
+    description:
+      "Desenvolvimento de sistemas de acordo com a necessidade do negócio, por um preço justo.",
+  },
+  {
     name: "Suporte depois da entrega",
     description:
       "Atualização de preços, fotos e textos depois que o site está no ar.",

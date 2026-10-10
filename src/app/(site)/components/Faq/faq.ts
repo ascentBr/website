@@ -40,6 +40,11 @@ export const faqItems: FaqItem[] = [
       "Eu, David, desenvolvedor formado em Engenharia de Software, com mais de 7 anos de experiência em e-commerces e desenvolvimento web. Você fala direto comigo. Se o projeto pedir mais mãos, como outros desenvolvedores ou designers, tenho como reunir profissionais para isso.",
   },
   {
+    question: "Você desenvolve sistemas para bar, restaurante ou empresa?",
+    answer:
+      "Sim. Além de sites e landing pages, desenvolvo sistemas sob medida de acordo com a necessidade do seu negócio, por um preço justo. O primeiro passo é uma conversa para entender o que você precisa. Fale comigo pelo formulário de contato.",
+  },
+  {
     question: "Tenho suporte depois que o site fica pronto?",
     answer:
       "Sim. Depois da entrega eu continuo ajudando com atualizações, como trocar preços, fotos e textos, para você não ficar na mão.",

@@ -6,6 +6,7 @@
 
 - Alguém quer fazer um site ou uma landing page para um pequeno negócio, consultório, comércio ou serviço.
 - Alguém quer um site rápido no celular, simples de entender e preparado para o Google.
+- Alguém precisa de um sistema sob medida para um bar, restaurante ou empresa.
 - Alguém precisa de um desenvolvedor para atualizar ou manter o site depois da entrega.
 
 ## Serviços
@@ -13,6 +14,7 @@
 - Site ou landing page para o negócio: página clara, com serviços e um botão para o cliente entrar em contato.
 - Site rápido no celular: carregamento rápido e funcionamento bem em qualquer tela.
 - Site preparado para o Google: estrutura, títulos e textos pensados para ser encontrado.
+- Sistemas sob medida para bares, restaurantes e empresas: desenvolvidos de acordo com a necessidade do negócio, por um preço justo.
 - Suporte depois da entrega: atualização de preços, fotos e textos.
 
 ## Como funciona
