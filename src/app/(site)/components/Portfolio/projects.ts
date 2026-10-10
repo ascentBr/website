@@ -66,10 +66,10 @@ export const portfolioProjects: PortfolioProject[] = [
     url: 'https://forum2026.cicb.org.br/',
     description:
       'Página de divulgação e inscrição de um evento presencial em Novo Hamburgo (RS), com programação, palestrantes, contato e versões em português e inglês.',
-    contractedBy: 'Studio Bah!, parceiro que nos contratou para este projeto.',
+    contractedBy: 'Studio Bah!, parceiro que me contratou para este projeto.',
     did: 'Desenvolvimento front end do layout e otimização de performance.',
     didNot:
-      'O design e a identidade visual são do Studio Bah!, que também atendeu o cliente. Nosso trabalho foi transformar esse design em código.',
+      'O design e a identidade visual são do Studio Bah!, que também atendeu o cliente. Meu trabalho foi transformar esse design em código.',
     tags: ['Front end', 'Performance', 'Bilíngue'],
   },
 ];

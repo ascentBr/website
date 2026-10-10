@@ -32,10 +32,24 @@
     text-align: left;
     color: var(--foreground);
     margin-top: 2rem;
-    p {
+    p,
+    li {
         font-size: 1rem;
         line-height: 1.5rem;
 
         opacity: 1;
+    }
+
+    h3 {
+        margin-top: 12px;
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        padding-left: 1.25rem;
     }
 }

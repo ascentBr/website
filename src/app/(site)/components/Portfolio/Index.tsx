@@ -26,7 +26,7 @@ const Portfolio = () => {
     <div className={styles.portfolio} id="portfolio">
       <div className="container">
         <h2 className={styles.portfolioTitle}>Projetos</h2>
-        <p className={styles.portfolioSubtitle}>Trabalhos que entregamos, com o que fizemos em cada um.</p>
+        <p className={styles.portfolioSubtitle}>Trabalhos que entreguei, com o que fiz em cada um.</p>
 
         <div className={styles.portfolioList} role="tablist" aria-label="Projetos">
           {portfolioProjects.map((project) => {
@@ -77,8 +77,8 @@ const Portfolio = () => {
             <h3 className={styles.portfolioDetailTitle}>{active.title}</h3>
             <p>{active.description}</p>
             {active.contractedBy && <p><strong>Contratados por:</strong> {active.contractedBy}</p>}
-            <p><strong>O que fizemos:</strong> {active.did}</p>
-            {active.didNot && <p><strong>O que não fizemos:</strong> {active.didNot}</p>}
+            <p><strong>O que fiz:</strong> {active.did}</p>
+            {active.didNot && <p><strong>O que não fiz:</strong> {active.didNot}</p>}
             <ul className={styles.portfolioChips}>
               {active.tags.map((tag) => <li key={tag}>{tag}</li>)}
             </ul>

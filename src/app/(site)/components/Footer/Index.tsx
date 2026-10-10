@@ -39,7 +39,7 @@ const Footer = () => {
         <div className={`container ${styles.FooterFormContainer}`}>
           <h2 className={styles.FooterFormTitle}>Vamos Conversar</h2>
           <p className={styles.FooterFormDescription}>
-            Entre em contato conosco para saber mais sobre nossos serviços.
+            Entre em contato comigo para saber mais sobre os serviços.
           </p>
           <ContactForm buttonStyle='secondary' buttonText='Enviar Mensagem'/>
         </div>
@@ -48,7 +48,7 @@ const Footer = () => {
       <div className={styles.Footer}>
         <div className={`container ${styles.FooterContainer}`}>
           <div className={styles.FooterContent}>
-            <FooterMenu settings={{ title: "Links rápidos", links: [{ label: "Sobre Nós", url: "/sobre" }, { label: "Contato", url: "#contact" }] }} />
+            <FooterMenu settings={{ title: "Links rápidos", links: [{ label: "Sobre mim", url: "/sobre" }, { label: "Contato", url: "#contact" }] }} />
             {/* <FooterMenu settings={{ title: "Support", links: [{ label: "Contact", url: "/#contact" }, { label: "FAQ", url: "/faq" }] }} />
           <FooterMenu settings={{ title: "Support", links: [{ label: "Contact", url: "/#contact" }, { label: "FAQ", url: "/faq" }] }} /> */}
             {/* <FooterMenu settings={{ title: "Support", links: [{ label: "Contact", url: "/#contact" }, { label: "FAQ", url: "/faq" }] }} /> */}

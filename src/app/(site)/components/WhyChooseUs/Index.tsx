@@ -11,8 +11,8 @@ const WhyChooseUs = () => {
             <div className={styles.whyChooseUsContent}>
                 <h2 className={styles.whyChooseUsTitle}>Por que escolher a Ascent?</h2>
                 <p className={styles.whyChooseUsSubtitle}>
-                    Trabalhamos com poucos projetos por vez e falamos a sua língua, sem jargão técnico.
-                    Você acompanha cada etapa e recebe um site pensado para o seu cliente, não para enfeitar.
+                    Falo a sua língua, sem jargão técnico. Você acompanha cada etapa
+                    e recebe um site pensado para o seu cliente, não só para enfeitar.
                 </p>
                 <Link href="#contact">Vamos conversar</Link>
             </div>

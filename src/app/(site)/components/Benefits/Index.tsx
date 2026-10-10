@@ -30,7 +30,7 @@ const Benefits = () => {
                     <BenefitItem
                         icon="/benefits/digital_marketing.svg"
                         title="Suporte depois da entrega"
-                        description="Precisa trocar um preço, uma foto ou um texto? A gente cuida das atualizações para você não ficar na mão."
+                        description="Precisa trocar um preço, uma foto ou um texto? Eu cuido das atualizações para você não ficar na mão."
                     />
                 </div>
             </div>
