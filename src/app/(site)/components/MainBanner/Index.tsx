@@ -20,9 +20,9 @@ const MainBanner = () => {
           />
           
           <div className={styles.bannerContent}>
-            <h2 className={styles.bannerText}>
+            <h1 className={styles.bannerText}>
           Seu negócio <br /><span>no Google</span> <br />com um site <br />rápido
-            </h2>
+            </h1>
             <p className={styles.bannerSubtext}>
           Sites e landing pages para pequenos empreendedores: rápidos no celular, simples de entender e feitos para o cliente entrar em contato com você.
             </p>

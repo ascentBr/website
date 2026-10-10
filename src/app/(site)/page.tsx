@@ -3,6 +3,7 @@ import MainBanner from "./components/MainBanner/Index";
 import Benefits from "./components/Benefits/Index";
 import WhyChooseUs from "./components/WhyChooseUs/Index";
 import Portfolio from "./components/Portfolio/Index";
+import Faq from "./components/Faq/Index";
 
 export default function Home() {
   return (
@@ -12,7 +13,7 @@ export default function Home() {
       <Benefits/>
       <WhyChooseUs />
       <Portfolio />
-      <div></div>
+      <Faq />
       <div></div>
     </div>
   );

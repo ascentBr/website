@@ -2,16 +2,23 @@ import Image from "next/image";
 import Benefits from "../components/Benefits/Index";
 import type { Metadata } from "next";
 import styles from "./page.module.scss";
+import JsonLd from "../components/JsonLd/Index";
+import { aboutJsonLd, socialMetadata } from "../seo";
+
+const aboutDescription =
+    "Conheça o David, desenvolvedor formado em Engenharia de Software, com mais de 7 anos de experiência em e-commerces e desenvolvimento web, criando sites para pequenos negócios.";
 
 export const metadata: Metadata = {
     title: "Sobre mim",
-    description: "Conheça o David, desenvolvedor formado em Engenharia de Software, com mais de 7 anos de experiência em e-commerces e desenvolvimento web, criando sites para pequenos negócios.",
+    description: aboutDescription,
     alternates: { canonical: "/sobre" },
+    ...socialMetadata({ title: "Sobre mim | Ascent", description: aboutDescription, path: "/sobre" }),
 };
 
 export default function About() {
     return (
         <div className={styles.page}>
+            <JsonLd data={aboutJsonLd} />
             <div>
                 <div
                     style={{ backgroundImage: `url("/main_banner.png")` }}
@@ -28,7 +35,7 @@ export default function About() {
                     />
 
                     <div className={`${styles.container} container`}>
-                        <h2>Sobre mim</h2>
+                        <h1>Sobre mim</h1>
                     </div>
 
                 </div>

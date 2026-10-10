@@ -1,65 +1,40 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Raleway } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header/Index";
 import Footer from "./components/Footer/Index";
 import { ToastContainer } from "react-toastify";
 import { ThemeProvider } from "next-themes";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
-const ralewaySans = Raleway({
-  variable: "--font-raleway-sans",
-  subsets: ["latin"],
-});
-
-const siteUrl = "https://www.ascentweb.com.br";
+import JsonLd from "./components/JsonLd/Index";
+import { organizationJsonLd, siteUrl, siteTitle, siteDescription, socialMetadata } from "./seo";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Ascent - Sites rápidos para pequenos empreendedores",
+    default: siteTitle,
     template: "%s | Ascent",
   },
-  description:
-    "Sites e landing pages rápidos no celular para pequenos empreendedores receberem mais contatos pelo Google.",
+  description: siteDescription,
+  applicationName: "Ascent",
+  authors: [{ name: "David Lucas Silva Santos", url: `${siteUrl}/sobre` }],
+  creator: "David Lucas Silva Santos",
   alternates: { canonical: "/" },
-  openGraph: {
-    type: "website",
-    locale: "pt_BR",
-    siteName: "Ascent",
-    url: siteUrl,
-    title: "Ascent - Sites rápidos para pequenos empreendedores",
-    description:
-      "Sites e landing pages rápidos no celular para pequenos empreendedores receberem mais contatos pelo Google.",
-  },
+  ...socialMetadata({ title: siteTitle, description: siteDescription, path: "/" }),
 };
 
-export default function RootLayout({
+export default function SiteLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR" suppressHydrationWarning={true}>
-
-      <body className={`${ralewaySans.variable}`}>
-        <ToastContainer />
-        <ThemeProvider defaultTheme="dark">
-          <Header />
-          {children}
-          <Footer />
-        </ThemeProvider>
-      </body>
-
-    </html>
+    <>
+      <JsonLd data={organizationJsonLd} />
+      <ToastContainer />
+      <ThemeProvider defaultTheme="dark">
+        <Header />
+        {children}
+        <Footer />
+      </ThemeProvider>
+    </>
   );
 }

@@ -11,11 +11,11 @@ const Header = () => {
   return (
     <div className={styles.header}>
       <div className={`${styles.container} container`}>
-        <h1 className={styles.logo}>
+        <div className={styles.logo}>
           <Link href="/">
            <Logo />
           </Link>
-        </h1>
+        </div>
 
         <nav className={styles.nav}>
           <ul>
