@@ -21,12 +21,12 @@ const MainBanner = () => {
           
           <div className={styles.bannerContent}>
             <h2 className={styles.bannerText}>
-          Atraia<br /> <span>Novos Clientes</span> <br />como nunca <br />antes
+          Seu negócio <br /><span>no Google</span> <br />com um site <br />rápido
             </h2>
             <p className={styles.bannerSubtext}>
-          Transforme visitas em oportunidades reais. Cresça seu negócio com estratégias que geram resultados.
+          Sites e landing pages para pequenos empreendedores: rápidos no celular, simples de entender e feitos para o cliente entrar em contato com você.
             </p>
-            <a className={styles.callToAction} href="#contact-form">Atraia novos clientes</a>
+            <a className={styles.callToAction} href="#contact-form">Quero meu site</a>
           </div>
         </div>
   )

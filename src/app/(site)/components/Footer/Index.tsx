@@ -4,6 +4,11 @@ import Link from 'next/link'
 import ContactForm from '../ContactForm/Index'
 import DynamicLogo from '../DynamicLogo/Index'
 
+const companyInfo = {
+  legalName: "68.010.885 DAVID LUCAS SILVA SANTOS",
+  cnpj: "68.010.885/0001-43",
+}
+
 type FooterMenuProps = {
   settings: {
     title: string;
@@ -53,7 +58,9 @@ const Footer = () => {
               </Link>
             </div>
           </div>
-
+          <p className={styles.FooterLegal}>
+            © {new Date().getFullYear()} {companyInfo.legalName} · CNPJ {companyInfo.cnpj}
+          </p>
         </div>
 
       </div>

@@ -21,9 +21,26 @@ const ralewaySans = Raleway({
   subsets: ["latin"],
 });
 
+const siteUrl = "https://www.ascentweb.com.br";
+
 export const metadata: Metadata = {
-  title: "Ascent - Web & Performance",
-  description: "Transforme seu negócio com estratégias digitais de alta performance.",
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: "Ascent - Sites rápidos para pequenos empreendedores",
+    template: "%s | Ascent",
+  },
+  description:
+    "Sites e landing pages rápidos no celular para pequenos empreendedores receberem mais contatos pelo Google.",
+  alternates: { canonical: "/" },
+  openGraph: {
+    type: "website",
+    locale: "pt_BR",
+    siteName: "Ascent",
+    url: siteUrl,
+    title: "Ascent - Sites rápidos para pequenos empreendedores",
+    description:
+      "Sites e landing pages rápidos no celular para pequenos empreendedores receberem mais contatos pelo Google.",
+  },
 };
 
 export default function RootLayout({
@@ -32,7 +49,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt_br" suppressHydrationWarning={true}>
+    <html lang="pt-BR" suppressHydrationWarning={true}>
 
       <body className={`${ralewaySans.variable}`}>
         <ToastContainer />

@@ -8,5 +8,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/preview/"],
       },
     ],
+    sitemap: "https://www.ascentweb.com.br/sitemap.xml",
   };
 }

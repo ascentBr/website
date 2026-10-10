@@ -8,42 +8,30 @@ const Benefits = () => {
             <div className="container">
                 <div className={styles.benefitsHeader}>
                     <h2 className={styles.benefitsHeaderTitle}>O que oferecemos</h2>
-                    <p className={styles.benefitsHeaderSubtitle}>Soluções digitais completas para impulsionar sua marca e gerar resultados reais.</p>
+                    <p className={styles.benefitsHeaderSubtitle}>O essencial para o seu negócio ser encontrado e receber contatos online.</p>
                 </div>
 
                 <div className={styles.benefitsGrid}>
                     <BenefitItem
-                        icon="/benefits/brand.svg"
-                        title="Especialistas dedicados"
-                        description="Profissionais que unem inovação e performance para transformar cada projeto em sucesso."
-                    />
-                    <BenefitItem
-                        icon="/benefits/web_dev.svg"    
-                        title="Desenvolvimento Web"
-                        description="Sites modernos, rápidos e responsivos, criados para engajar visitantes e gerar conversões."
-                    />
-                    <BenefitItem
-                        icon="/benefits/digital_marketing.svg"
-                        title="Suporte Contínuo"
-                        description="Acompanhamento e manutenção para manter seu site sempre atualizado e funcionando sem falhas."
+                        icon="/benefits/web_dev.svg"
+                        title="Site ou landing page"
+                        description="Para quem quer mostrar o negócio na internet e receber contatos. Você ganha uma página clara, com seus serviços e um botão para falar com você."
                     />
                     <BenefitItem
                         icon="/benefits/mobile_app.svg"
-                        title="Experiência Multiplataforma"
-                        description="Soluções que se adaptam a qualquer dispositivo, garantindo a melhor experiência em desktop e mobile."
+                        title="Rápido no celular"
+                        description="A maioria dos seus clientes acessa pelo celular. Seu site carrega rápido e funciona bem em qualquer tela, para ninguém desistir antes de ver sua oferta."
                     />
                     <BenefitItem
                         icon="/benefits/seo.svg"
-                        title="SEO"
-                        description="Estratégias de otimização para aumentar sua visibilidade no Google e atrair mais clientes."
+                        title="Pronto para o Google"
+                        description="Estrutura e textos preparados para que as pessoas da sua região encontrem você quando pesquisarem pelo que você faz."
                     />
                     <BenefitItem
-                        icon="/benefits/user.svg"
-                        title="Testes de Usuário"
-                        description="Analisamos a jornada do usuário para indicar melhorias que aumentam conversões e satisfação."
+                        icon="/benefits/digital_marketing.svg"
+                        title="Suporte depois da entrega"
+                        description="Precisa trocar um preço, uma foto ou um texto? A gente cuida das atualizações para você não ficar na mão."
                     />
-
-
                 </div>
             </div>
 
